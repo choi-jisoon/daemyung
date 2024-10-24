@@ -19,7 +19,6 @@ $('.header nav ul#gnb>li').on('mouseover', function() {
 });
 
 
-
 $('.header nav ul#gnb>li').on('mouseout', function() {
    clearTimeout(timer);
 
@@ -68,6 +67,34 @@ setTimeout(function() {
    });
 }, 2000);
 
+/* 햄버거 메뉴 */
+// 스크롤에 따른 버튼 색상 변경
+window.addEventListener('scroll', function () {
+   const btnAllMenuOpen = document.querySelector('.btn_allmenu_open');
+   const scrollY = window.scrollY;
+
+   // 특정 스크롤 위치를 기준으로 색상 변경
+   if (scrollY > 300) {
+      btnAllMenuOpen.style.backgroundColor = 'black';
+   }
+   else {
+      btnAllMenuOpen.style.backgroundColor = '#333'; // 기본 색상
+   }
+});
+
+// 메뉴 열기 버튼을 눌렀을 때 팝업을 열고 body 스크롤 잠그기
+document.querySelector('.btn_allmenu_open').addEventListener('click', function () {
+document.querySelector('.allmenu_popup').classList.add('open');
+document.querySelector('.btn_allmenu_open').classList.add('hidden');
+document.body.classList.add('modal-open'); // body 스크롤 잠그기
+});
+
+// 닫기 버튼을 눌렀을 때 팝업을 닫고 body 스크롤 해제
+document.querySelector('.btn_allmenu_close').addEventListener('click', function () {
+document.querySelector('.allmenu_popup').classList.remove('open');
+document.querySelector('.btn_allmenu_open').classList.remove('hidden');
+document.body.classList.remove('modal-open'); // body 스크롤 해제
+});
 
 
 /* history JS */

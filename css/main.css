@@ -10,6 +10,9 @@ body {
     background: #FFF;
     -ms-overflow-style: none;
 }
+body.modal-open {
+    overflow: hidden;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -164,7 +167,12 @@ body {
 .header nav ul#gnb ul>li>a:hover {
     font-weight: 600;
 }
+/* allmenu(햄버거) */
+.allmenu_wrap {
+    display: none;
+}
 
+/* main */
 #main{
     position: relative;
 
@@ -299,7 +307,7 @@ body {
     .header h1 {
         width: 500px; height: 500px; background-size: cover;
         margin-left: 0;
-        left: 39%;
+        left: 40%;
     }
     .header nav ul#gnb {
         display: none; /* 768px 이하에서 gnb 숨기기 */
@@ -310,6 +318,70 @@ body {
         font-size: 16px;
         font-weight: 700;
         color: #FFF;
+    }
+    .allmenu_wrap {
+        display: block;
+    }
+
+    /* 메뉴 열기 버튼 */
+    .btn_allmenu_open {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #333; /* 기본 색상 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 1000;
+    }
+
+    /* 팝업 메뉴 기본적으로 숨김 */
+    .allmenu_popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    overflow-y: auto; /* 팝업 내에서만 스크롤 가능 */
+    }
+
+    /* 팝업이 열렸을 때 보이도록 설정 */
+    .allmenu_popup.open {
+    display: block;
+    }
+
+    /* 팝업이 열렸을 때 닫기 버튼이 나타남 */
+    .allmenu_popup.open .btn_allmenu_close {
+    display: block;
+    }
+
+    /* 팝업이 열렸을 때 메뉴 열기 버튼은 숨김 */
+    .btn_allmenu_open.hidden {
+    display: none;
+    }
+
+    /* 닫기 버튼 기본 설정 */
+    .btn_allmenu_close {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 1001;
     }
 }
 
