@@ -11,7 +11,7 @@ $('.header nav ul#gnb>li').on('mouseover', function() {
 
    $('.header').addClass('on');
 
-   $('.header h1 a').css({'background-image': 'url(./img/bi2023.png)', 'transition': 'all 0.5s'});
+   $('.header h1 a').css({'background-image': 'url(./img/bi2023_on.png)', 'transition': 'all 0.5s'});
    $('.header nav ul#gnb>li>a').css({'color': 'black'});
 
    //gnb 투뎁스들 애니메이션
