@@ -630,9 +630,9 @@ body {
     background-image: url(../img/architecture.jpg);
     font-weight: 700; font-size: 48px;
 }
-.business.grayscale {
+/* .business.grayscale {
     filter: grayscale(100%);
-}
+} */
 .business a{
     text-decoration: none;
     color: black;

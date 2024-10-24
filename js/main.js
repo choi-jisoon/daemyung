@@ -11,7 +11,7 @@ $('.header nav ul#gnb>li').on('mouseover', function() {
 
    $('.header').addClass('on');
 
-   $('.header h1 a').css({'background-image': 'url(../img/bi2023_on.png)', 'transition': 'all 0.5s'});
+   $('.header h1 a').css({'background-image': 'url(img/bi2023_on.png)', 'transition': 'all 0.5s'});
    $('.header nav ul#gnb>li>a').css({'color': 'black'});
 
    //gnb 투뎁스들 애니메이션
@@ -30,7 +30,7 @@ $('.header nav ul#gnb>li').on('mouseout', function() {
    if (!$('.header nav ul#gnb>li.over').length) {
       timer = setTimeout(function() {
          $('.header').removeClass('on');
-         $('.header h1 a').css({'background-image': 'url(../img/bi2023.png)', 'transition': 'all 0.5s'});
+         $('.header h1 a').css({'background-image': 'url(img/bi2023.png)', 'transition': 'all 0.5s'});
          $('.header nav ul#gnb>li>a').css({'color': 'white'});
          $('.header nav ul#gnb ul>li>a').css({'color': 'white', 'opacity': '0', 'transition': 'opacity 0.5s'});
       }, 300);
@@ -42,7 +42,7 @@ $('.header').on('mouseleave', function() {
    clearTimeout(timer); //남아있는 타이머 초기화
    $('.header').removeClass('on');
    $('.header nav ul#gnb>li').removeClass('over');
-   $('.header h1 a').css({'background-image': 'url(../img/bi2023.png)', 'transition': 'all 0.5s'});
+   $('.header h1 a').css({'background-image': 'url(img/bi2023.png)', 'transition': 'all 0.5s'});
    $('.header nav ul#gnb>li>a').css({'color': 'white'});
    $('.header nav ul#gnb ul>li>a').css({'color': 'white', 'opacity': '0', 'transition': 'opacity 0.5s'});
 });
@@ -151,21 +151,21 @@ const business_links = document.querySelectorAll('.business a');
 business_links.forEach(business_link => {
    business_link.addEventListener('mouseover', () => {
       business_link.classList.add('active');
-      document.querySelector('.business').classList.remove('grayscale');
+      /* document.querySelector('.business').classList.remove('grayscale'); */
 
       if (business_link.classList.contains('architecture')) {
-            document.querySelector('.business').style.backgroundImage = "url('../img/architecture.jpg')";
+            document.querySelector('.business').style.backgroundImage = "url('img/architecture.jpg')";
       } else if (business_link.classList.contains('leisure')) {
-            document.querySelector('.business').style.backgroundImage = "url('../img/leisure.jpg')";
+            document.querySelector('.business').style.backgroundImage = "url('img/leisure.jpg')";
       } else if (business_link.classList.contains('civil')) {
-            document.querySelector('.business').style.backgroundImage = "url('../img/civil.jpg')";
+            document.querySelector('.business').style.backgroundImage = "url('img/civil.jpg')";
       }
    });
 
 
    business_link.addEventListener('mouseleave', () => {
       business_link.classList.remove('active');
-      document.querySelector('.business').classList.add('grayscale');
+      /* document.querySelector('.business').classList.add('grayscale'); */
    });
 });
 
