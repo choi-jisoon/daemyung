@@ -52,14 +52,13 @@ setTimeout(function() {
    });
 }, 1000)
 
-
-
 setTimeout(function() {
    $('.main_visual .firstp').css({
          'opacity': '1',
          'transform': 'translateY(0)'
    });
 }, 2000);
+
 setTimeout(function() {
    $('.main_visual .seconndp').css({
          'opacity': '1',
@@ -67,52 +66,58 @@ setTimeout(function() {
    });
 }, 2000);
 
+
 /* 햄버거 메뉴 */
-// 스크롤에 따른 버튼 색상 변경
+//스크롤에 따른 버튼 색상 변경
 window.addEventListener('scroll', function () {
    const btnAllMenuOpen = document.querySelector('.btn_allmenu_open');
    const scrollY = window.scrollY;
    const mainVisualHeight = document.querySelector('.main_visual').offsetHeight;
 
-   // 특정 스크롤 위치를 기준으로 색상 변경
+   //특정 스크롤 위치를 기준으로 색상 변경
    if (scrollY > mainVisualHeight) {
       btnAllMenuOpen.style.backgroundColor = 'black';
-   } else {
-      btnAllMenuOpen.style.backgroundColor = ''; // 기본 색상으로 초기화
+   }
+   else {
+      btnAllMenuOpen.style.backgroundColor = '';
    }
 });
 
-// 메뉴 열기 버튼을 눌렀을 때 팝업을 열고 body 스크롤 잠그기
+//allmenu 열기 버튼
 document.querySelector('.btn_allmenu_open').addEventListener('click', function () {
-   document.querySelector('.allmenu_popup').classList.add('open');
+   const popup = document.querySelector('.allmenu_popup');
+   popup.classList.add('open');
+   popup.scrollTop = 0; // 팝업 내부 스크롤을 최상단으로 초기화
    document.querySelector('.btn_allmenu_open').classList.add('hidden');
-   document.body.classList.add('modal-open'); // body 스크롤 잠그기
+   document.querySelector('.btn_allmenu_close').style.display = 'block';
+   document.body.classList.add('modal-open');
 });
 
-// 닫기 버튼을 눌렀을 때 팝업을 닫고 body 스크롤 해제
+//allmenu 닫기 버튼
 document.querySelector('.btn_allmenu_close').addEventListener('click', function () {
-   document.querySelector('.allmenu_popup').classList.remove('open');
+   const popup = document.querySelector('.allmenu_popup');
+   popup.classList.remove('open');
    document.querySelector('.btn_allmenu_open').classList.remove('hidden');
-   document.body.classList.remove('modal-open'); // body 스크롤 해제
+   document.querySelector('.btn_allmenu_close').style.display = 'none';
+   document.body.classList.remove('modal-open');
 });
 
-// 창 크기 변경을 감지하여 팝업을 닫는 기능 추가
+//창 크기 변경을 감지하여 팝업을 닫는 기능
 window.addEventListener('resize', function () {
    const windowWidth = window.innerWidth;
-
-   // 창 크기가 870px 이상이면 팝업을 닫고 body 스크롤을 해제
    if (windowWidth > 870) {
       const popup = document.querySelector('.allmenu_popup');
       if (popup.classList.contains('open')) {
          popup.classList.remove('open');
          document.querySelector('.btn_allmenu_open').classList.remove('hidden');
-         document.body.classList.remove('modal-open'); // body 스크롤 해제
+         document.body.classList.remove('modal-open');
       }
    }
 });
 
-/* history JS */
 
+
+/* history JS */
 let animationStarted = false;
 
 $(window).on('scroll', function() {
@@ -211,13 +216,13 @@ business_links.forEach(business_link => {
 });
 
 
-// 버튼 클릭 시 family_list 토글
+//버튼 클릭 시 family_list 토글
 document.getElementById('familyButton').addEventListener('click', function() {
    const familyList = document.getElementById('familyList');
    familyList.style.display = familyList.style.display === 'none' ? 'block' : 'none';
 });
 
-// 외부 클릭 시 family_list 닫기
+//외부 클릭 시 family_list 닫기
 document.addEventListener('click', function(event) {
    const familyList = document.getElementById('familyList');
    const familyButton = document.getElementById('familyButton');
