@@ -82,53 +82,65 @@
                      <img src="./img/bi2023_on.png" alt="대명건설 로고">
                   </div>
                </div>
+               <div class="line"></div>
                <div class="allmenu_gnb">
-                  <ul>
-                     <li><a href="#">회사소개</a>
-                        <ul>
-                           <li><a href="#">CEO 인사말</a></li>
-                           <li><a href="#">회사비전 및 행동강령</a></li>
-                           <li><a href="#">연혁</a></li>
-                           <li><a href="#">수상경력</a></li>
-                           <li><a href="#">조직도</a></li>
-                           <li><a href="#">윤리경영</a></li>
-                           <li><a href="#">CI/BI 소개</a></li>
-                           <li><a href="#">실적공개</a></li>
-                        </ul>
+
+                  <ul class="dep1">
+                     <li class="dep1_first"><a href="#">회사 소개</a>
+                        <div class="dep2_container">
+                           <ul class="dep2">
+                              <li><a href="#">CEO 인사말</a></li>
+                              <li><a href="#">회사비전 및 행동강령</a></li>
+                              <li><a href="#">연혁</a></li>
+                              <li><a href="#">수상경력</a></li>
+                              <li><a href="#">조직도</a></li>
+                              <li><a href="#">윤리경영</a></li>
+                              <li><a href="#">CI/BI 소개</a></li>
+                              <li><a href="#">실적공개</a></li>
+                           </ul>
+                        </div>
                      </li>
 
                      <li><a href="#">사업 소개</a>
-                        <ul>
-                           <li><a href="#">건축</a></li>
-                           <li><a href="#">레저</a></li>
-                           <li><a href="#">토목</a></li>
-                        </ul>
+                        <div class="dep2_container">
+                           <ul class="dep2">
+                              <li><a href="#">건축</a></li>
+                              <li><a href="#">레저</a></li>
+                              <li><a href="#">토목</a></li>
+                           </ul>
+                        </div>
                      </li>
 
                      <li><a href="#">협력업체 소개</a>
-                        <ul>
-                           <li><a href="#">우수협력업체</a></li>
-                           <li><a href="#">상생협력제도</a></li>
-                           <li><a href="#">관계회사</a></li>
-                        </ul>
+                        <div class="dep2_container">
+                           <ul class="dep2">
+                              <li><a href="#">우수협력업체</a></li>
+                              <li><a href="#">상생협력제도</a></li>
+                              <li><a href="#">관계회사</a></li>
+                           </ul>
+                        </div>
                      </li>
 
                      <li><a href="#">채용공고/소개</a>
-                        <ul>
-                           <li><a href="#">인재상</a></li>
-                           <li><a href="#">채용정보</a></li>
-                           <li><a href="#">인사제도</a></li>
-                           <li><a href="#">복리후생</a></li>
-                        </ul>
+                        <div class="dep2_container">
+                           <ul class="dep2">
+                              <li><a href="#">인재상</a></li>
+                              <li><a href="#">채용정보</a></li>
+                              <li><a href="#">인사제도</a></li>
+                              <li><a href="#">복리후생</a></li>
+                           </ul>
+                        </div>
                      </li>
 
                      <li><a href="#">커뮤니티</a>
-                        <ul>
-                           <li><a href="#">고객문의</a></li>
-                           <li><a href="#">공지사항</a></li>
-                           <li><a href="#">고객의 말씀</a></li>
-                           <li><a href="#">찾아오시는 길</a></li>
-                        </ul>
+                        <div class="dep2_container">
+                           <ul class="dep2">
+                              <li><a href="#">고객문의</a></li>
+                              <li><a href="#">공지사항</a></li>
+                              <li><a href="#">고객의 말씀</a></li>
+                              <li><a href="#">찾아오시는 길</a></li>
+                           </ul>
+                        </div>
                      </li>
                   </ul>
                </div>
@@ -301,17 +313,19 @@
                   <a href="#">이메일 무단 수집거부</a>
                </div>
                <div class="family_wrap">
-                  <button>FAMILY SITES <i class="ri-add-fill"></i></button>
-                  <!-- <ul>
-                     <li><a href="#" target="_blank">대명소노그룹</a></li>
-                     <li><a href="#" target="_blank">소노호텔&리조트</a></li>
-                     <li><a href="#" target="_blank">소노시즌</a></li>
-                     <li><a href="#" target="_blank">대명윤리경영</a></li>
-                     <li><a href="#" target="_blank">MRO사업부</a></li>
-                     <li><a href="#" target="_blank">대명아임레디</a></li>
-                     <li><a href="#" target="_blank">대명복지재단</a></li>
-                  </ul> -->
-               </div> <!-- footer 오른쪽 상단에 1자로 넣을건데 이렇게 해도 되는건가 -->
+                  <button id="familyButton">FAMILY SITES<i class="ri-add-fill"></i></button>
+                  <div class="family_list" id="familyList">
+                     <ul>
+                        <li><a href="#" target="_blank">대명소노그룹</a></li>
+                        <li><a href="#" target="_blank">소노호텔&리조트</a></li>
+                        <li><a href="#" target="_blank">소노시즌</a></li>
+                        <li><a href="#" target="_blank">대명윤리경영</a></li>
+                        <li><a href="#" target="_blank">MRO사업부</a></li>
+                        <li><a href="#" target="_blank">대명아임레디</a></li>
+                        <li><a href="#" target="_blank">대명복지재단</a></li>
+                     </ul>
+                  </div>
+               </div>
             </div>
             <div class="f_left_mid">
                <div class="f_address">
@@ -319,7 +333,7 @@
                </div>
                <div class="f_contact">
                   <p><span>전화 : </span><a href="tel:042-350-4162">02-2222-(내선번호)</a></p>
-                  <p><span>E-mail</span><a href="mailto:gggs@kaist.ac.kr">gggs@kaist.ac.kr</a></p>
+                  <p><span>E-mail : </span><a href="mailto:gggs@kaist.ac.kr">gggs@kaist.ac.kr</a></p>
                </div>
             </div>
             <div class="f_left_bottom">
