@@ -434,30 +434,37 @@ body.modal-open {
     .main_visual strong,
     .main_visual .firstp,
     .main_visual .seconndp {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 @media (max-width: 580px) {
-    .main_visual strong {font-size: 54px; line-height: 0px;}
+    .main_visual strong {font-size: 54px;  top: 350px; line-height: 0px;}
     .main_visual .firstp {
         font-size: 24px;
         line-height: 100px;
+        top: 370px !important;
     }
 
     .main_visual .seconndp {
         font-size: 13px;
         color: #FFF;
+        top: 380px !important;
+    }
+    .main_visual strong,
+    .main_visual .firstp,
+    .main_visual .seconndp {
+        margin-left: 20px;
     }
 }
 
 /* 480px 미디어 쿼리 */
-@media (max-width: 480px) {
+@media (max-width: 431px) {
     .header h1 {
         height: 100px; background-size: cover;
         margin-left: 0;
     }
     .main_visual {
-        width: 100vw; height: 100vh;margin-bottom: 100px;
+        width: 100vw; height: 80vh; /* margin-bottom: 100px; */
     }
     .header h1 a {
         width: 278px;
@@ -466,19 +473,21 @@ body.modal-open {
         background-size: contain; /* 이미지 잘리지 않도록 */
         transform: translateX(-50%);
     }
-    .main_visual strong {font-size: 40px; line-height: 80px;}
+    .main_visual strong {font-size: 40px; top: 300px !important; margin-bottom: 0;}
     .main_visual .firstp {
         font-size: 20px;
-        line-height: 100px;
+        line-height: 60px;
+        top: 320px !important;
     }
     .main_visual .seconndp {
-        font-size: 11px;
+        font-size: 10px;
         color: #FFF;
+        top: 330px !important;
     }
     .main_visual strong,
     .main_visual .firstp,
     .main_visual .seconndp {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 /* header--------------------------------------------------------------------------------------------------------------- */
@@ -752,6 +761,10 @@ body.modal-open {
     .historyText_wrap p {font-size: 10px;}
     .title {font-size: 14px;}
     .content {font-size: 10px;}
+    .history {
+        margin-top: 80px;
+        height: 200px;
+    }
 }
 
 /* business */
@@ -1213,7 +1226,7 @@ footer {
 }
 @media (max-width: 440px) {
     footer {
-        height: 17vh;
+        height: 19vh;
     }
     .family_wrap button {margin-top: 10px;}
     .f_left, .f_right {
