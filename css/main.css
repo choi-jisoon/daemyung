@@ -425,8 +425,8 @@ body.modal-open {
         right: 40px;
     }
     .btn_allmenu_open {
-        top: 23px;
-        right: 50px;
+        top: 20px;
+        right: 30px;
     }
 }
 @media (max-width: 670px) {
@@ -438,7 +438,7 @@ body.modal-open {
     }
 }
 @media (max-width: 580px) {
-    .main_visual strong {font-size: 54px; line-height: 150px;}
+    .main_visual strong {font-size: 54px; line-height: 0px;}
     .main_visual .firstp {
         font-size: 24px;
         line-height: 100px;
@@ -452,6 +452,10 @@ body.modal-open {
 
 /* 480px 미디어 쿼리 */
 @media (max-width: 480px) {
+    .header h1 {
+        height: 100px; background-size: cover;
+        margin-left: 0;
+    }
     .main_visual {
         width: 100vw; height: 100vh;margin-bottom: 100px;
     }
@@ -486,7 +490,6 @@ body.modal-open {
     background: white;
     width: 100vw;
     height: 400px;
-
 }
 
 .history .historyText_wrap {
@@ -735,6 +738,21 @@ body.modal-open {
     .content {font-size: 12px;}
 
 }
+@media (max-width: 440px) {
+    .historyIcon_wrap .iconBox.build,
+    .historyIcon_wrap .iconBox.trophy,
+    .historyIcon_wrap .iconBox.book {
+        width: 50px;
+        height: 50px;
+    }
+    .historyIcon_wrap li:nth-child(2) {
+        margin-right: 45px;
+    }
+    .historyText_wrap strong {font-size: 16px;}
+    .historyText_wrap p {font-size: 10px;}
+    .title {font-size: 14px;}
+    .content {font-size: 10px;}
+}
 
 /* business */
 .business {
@@ -957,6 +975,11 @@ body.modal-open {
         width: 70%;
     }
 }
+@media (max-width: 440px) {
+    .news hgroup , .news .news_wrap {
+        width: 60%;
+    }
+}
 
 /* erp */
 
@@ -990,6 +1013,12 @@ body.modal-open {
 @media (max-width : 550px)  {
     .erp {
         gap: 20%;
+    }
+}
+@media (max-width : 440px)  {
+    .erp {
+        gap: 15%;
+        font-size: 18px;
     }
 }
 
@@ -1148,7 +1177,7 @@ footer {
 }
 @media (max-width: 640px) {
     .footer_inner {
-        width: 80%;
+        width: 90%;
     }
 
     .f_left {
@@ -1180,5 +1209,24 @@ footer {
         height: 20vh; font-size: 9px;
     }
     .family_wrap button {font-size: 12px; margin-left: -5px; margin-top: 15px;}
+
+}
+@media (max-width: 440px) {
+    footer {
+        height: 17vh;
+    }
+    .family_wrap button {margin-top: 10px;}
+    .f_left, .f_right {
+        font-size: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 30px ;
+    }
+    .f_right_bottom img {
+        width: 150px;
+        height: 50px;
+        margin-top: 70px;
+    }
 
 }
