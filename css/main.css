@@ -2,9 +2,10 @@
 :root{
     --main-color: #B7240D;
 }
-
+html {
+    overflow-x : hidden !important;
+}
 body {
-    overflow-x: hidden !important;
     font-family: 'pretendard', 'kopub', 'notosans';
     font-size: 16px;
     color: #000;
@@ -465,7 +466,7 @@ body.modal-open {
         margin-left: 0;
     }
     .main_visual {
-        width: 100vw; height: 80vh; /* margin-bottom: 100px; */
+        width: 100vw; height: 100vh; /* margin-bottom: 100px; */
     }
     .header h1 a {
         width: 278px;
@@ -488,7 +489,7 @@ body.modal-open {
     .main_visual strong,
     .main_visual .firstp,
     .main_visual .seconndp {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 }
 /* header--------------------------------------------------------------------------------------------------------------- */
