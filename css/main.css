@@ -4,6 +4,8 @@
 }
 html {
     overflow-x : hidden !important;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body {
     font-family: 'pretendard', 'kopub', 'notosans';
@@ -11,6 +13,8 @@ body {
     color: #000;
     background: #FFF;
     -ms-overflow-style: none;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body.modal-open {
     overflow: hidden;
@@ -333,7 +337,7 @@ body.modal-open {
         position: fixed;
         top: 23px;
         right: 30px;
-        width: 50px;
+        width: 45px;
         height: 50px;
         background: none;
         color: white;
@@ -489,7 +493,7 @@ body.modal-open {
     .main_visual strong,
     .main_visual .firstp,
     .main_visual .seconndp {
-        margin-left: 20px;
+        margin-left: 25px;
     }
 }
 /* header--------------------------------------------------------------------------------------------------------------- */
@@ -1090,7 +1094,7 @@ footer {
 .family_list {
     display: none;
     position: absolute;
-    top: 40px;
+    top: -160px;
     left: 0;
     width: 200px;
     max-height: 150px;
@@ -1228,7 +1232,7 @@ footer {
 }
 @media (max-width: 440px) {
     footer {
-        height: 19vh;
+        height: 20vh;
     }
     .family_wrap button {margin-top: 10px;}
     .f_left, .f_right {
