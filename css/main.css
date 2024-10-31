@@ -2,26 +2,26 @@
 :root{
     --main-color: #B7240D;
 }
-html {
+/* html {
     overflow-x : hidden !important;
     max-width: 100%;
     overflow-x: hidden;
-}
+} */
 body {
     font-family: 'pretendard', 'kopub', 'notosans';
     font-size: 16px;
     color: #000;
     background: #FFF;
-    -ms-overflow-style: none;
-    max-width: 100%;
-    overflow-x: hidden;
+    /* -ms-overflow-style: none; */
+   /*  max-width: 100%; */
+    /* overflow-x: hidden; */
 }
 body.modal-open {
     overflow: hidden;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .blind {display: none;}
 
@@ -829,26 +829,101 @@ body.modal-open {
 
 
 /* project */
-.project{
-    margin-top: 200px;
+.project {
+    margin-top: 300px;
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 300px;
+
 }
+
 .project hgroup {
     display: flex;
     justify-content: space-between;
     margin: auto;
     margin-top: 200px;
-    width: 80%;
+    width: 90%;
 }
-.project hgroup h2{
-    font-size: 40px; font-weight: bold;
+
+.project hgroup h2 {
+    font-size: 40px;
+    font-weight: bold;
 }
-.project hgroup span{
-    font-size: 18px; font-weight: bold;
+
+.project hgroup span {
+    font-size: 18px;
+    font-weight: bold;
     margin-left: 10px;
 }
+
 .project span a {
     color: var(--main-color);
 }
+
+.project_swiper {
+    position: relative;
+    margin-top: 200px;
+
+}
+
+.project_swiper ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+
+.project_swiper li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: scale(0.7); */
+    transition: transform 0.3s;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project_swiper li.swiper-slide-active {
+    width: 600px;
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+/* .project_swiper li a {
+
+
+} */
+
+.project_swiper li a img {
+    width: 300px;
+    height: 300px;
+}
+
+.project_swiper li .txt_box {
+    display: none; /* 기본 상태에서 텍스트 숨김 */
+    padding: 20px;
+    font-size: 14px;
+}
+
+.project_swiper li.swiper-slide-active .txt_box {
+    display: block;
+}
+
+.project_swiper li .txt_box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.project_swiper li .txt_box1 strong{
+    font-weight: 700;
+}
+.project_swiper li .txt_box1 p{
+    font-size: 12px;
+}
+
+
 
 
 /* News */
@@ -857,7 +932,7 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 200px auto 0 auto;
+    margin: 200px auto 200px auto;
 }
 
 .news hgroup {
