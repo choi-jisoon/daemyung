@@ -867,7 +867,6 @@ body.modal-open {
 .project_swiper {
     position: relative;
     margin-top: 200px;
-
 }
 
 .project_swiper ul {
@@ -977,13 +976,19 @@ body.modal-open {
     }
 }
 @media (max-width: 500px) {
+    .project_swiper {
+        margin-top: 150px;
+    }
+    .project hgroup {
+        width: 92%;
+    }
     .project hgroup h2 {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bold;
     }
 
     .project hgroup span {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         margin-left: 10px;
         text-align: center;
@@ -1168,11 +1173,11 @@ body.modal-open {
 
     }
     .news hgroup h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .news hgroup span {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 15px;
     }
 }
