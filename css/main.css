@@ -974,7 +974,7 @@ body.modal-open {
     .project_swiper li .txt_box1 {
         gap: 20px !important;
     }
-}
+}/*  */
 @media (max-width: 500px) {
     .project {margin-bottom: 200px;}
     .project_swiper {
