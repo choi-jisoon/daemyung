@@ -976,8 +976,9 @@ body.modal-open {
     }
 }
 @media (max-width: 500px) {
+    .project {margin-bottom: 200px;}
     .project_swiper {
-        margin-top: 150px;
+        margin-top: 170px;
     }
     .project hgroup {
         width: 92%;
