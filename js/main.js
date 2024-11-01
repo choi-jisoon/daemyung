@@ -238,17 +238,28 @@ const swiper = new Swiper('.project_swiper', {
    centeredSlides: true,
    // If we need pagination
    pagination: {
-     el: '.swiper-pagination',
+      el: '.swiper-pagination',
    },
 
    // Navigation arrows
    navigation: {
-     nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
    },
 
    // And if we need scrollbar
    scrollbar: {
-     el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar',
    },
- });
+   breakpoints: {
+      1280 : {
+         slidesPerView: 3,
+      },
+      1024 : {
+         slidesPerView: 2,
+      },
+      430 : {
+         slidesPerView: 1,
+      }
+   },
+});
