@@ -733,8 +733,8 @@ body.modal-open {
     .historyIcon_wrap ul {
         gap: 20px;
     }
-    .historyText_wrap strong {font-size: 18px;}
-    .historyText_wrap p {font-size: 14px;}
+    .historyText_wrap strong {font-size: 20px;}
+    .historyText_wrap p {font-size: 15px;}
     .historyIcon_wrap li:nth-child(2) {
         margin-left: 30px;
     }
@@ -748,7 +748,7 @@ body.modal-open {
         margin-left: 10px;
     }
     .historyText_wrap strong {font-size: 20px;}
-    .historyText_wrap p {font-size: 12px;}
+    .historyText_wrap p {font-size: 15px;}
     .title {font-size: 16px;}
     .content {font-size: 12px;}
 
@@ -957,7 +957,7 @@ body.modal-open {
 
 @media (max-width: 600px) {
     .project_swiper li.swiper-slide-active {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
     .project_swiper li {
         flex-direction: column; /* 세로 배치 설정 */
@@ -978,7 +978,7 @@ body.modal-open {
 @media (max-width: 500px) {
     .project {margin-bottom: 200px;}
     .project_swiper {
-        margin-top: 170px;
+        margin-top: 100px;
     }
     .project hgroup {
         width: 92%;
@@ -1169,6 +1169,11 @@ body.modal-open {
     }
 }
 @media (max-width: 540px) {
+    .news {
+        margin-top: 250px;
+    }
+
+
     .news hgroup , .news .news_wrap {
         width: 70%;
 
@@ -1207,6 +1212,7 @@ body.modal-open {
     font-size: 24px;
     font-weight: 700;
     box-sizing: border-box;
+    z-index: 0;
 }
 
 .erp a {
@@ -1283,7 +1289,7 @@ footer {
 .family_list {
     display: none;
     position: absolute;
-    top: -160px;
+    top: 30px;
     left: 0;
     width: 200px;
     max-height: 150px;
@@ -1291,13 +1297,14 @@ footer {
     color: #fff;
     border-radius: 5px;
     overflow-y: auto;
-    z-index: 10;
+    z-index: 10000;
 }
 
 .family_list ul {
     list-style: none;
     padding: 10px;
     margin: 0;
+    z-index: 9999;
 }
 
 .family_list ul li {
@@ -1333,7 +1340,7 @@ footer {
 }
 
 .f_right_bottom img{
-    width: 350px; height: 130px; margin-top: 45px;
+    width: 350px; height: 110px; margin-top: 45px;
 }
 @media (max-width: 1024px) {
     .footer_inner {
@@ -1357,13 +1364,13 @@ footer {
     }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 840px) {
     .footer_inner {
         width: 90%;
     }
 
     .f_left {
-        font-size: 12px;
+        font-size: 14px;
     }
     .f_right {
         gap: 20px;
@@ -1376,20 +1383,20 @@ footer {
         font-size: 24px;
         justify-content: center;
     }
-    .family_wrap button {font-size: 12px;}
+    .family_wrap button {font-size: 14px;}
     .f_right_bottom img {
         width: 200px;
-        height: 100px;
-        margin-top: 95px;
+        height: 80px;
+        margin-top: 100px;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 710px) {
     .footer_inner {
-        width: 90%;
+        width: 95%;
     }
 
     .f_left {
-        font-size: 10px; width: 50%;
+        font-size: 14px; width: 50%;
     }
     .f_right {
         gap: 20px;
@@ -1399,27 +1406,29 @@ footer {
     }
     .sns_wrap {
         gap: 10px;
-        font-size: 20px;
+        font-size: 30px;
         justify-content: center;
     }
     .family_wrap button {font-size: 12px; margin-left: -5px; margin-top: 10px;}
     .f_right_bottom img {
-        width: 150px;
-        height: 50px;
-        margin-top: 95px;
+        width: 200px;
+        height: 80px;
+        margin-top: 75px;
     }
     footer {
         height: 20vh;
     }
 }
 @media (max-width: 500px) {
+    .f_left {width: 100%;}
+    .f_right{display: none;}
     .f_left, .f_right {
-        height: 20vh; font-size: 9px;
+        height: 20vh; font-size: 14px;
     }
-    .family_wrap button {font-size: 12px; margin-left: -5px; margin-top: 15px;}
+    .family_wrap button {font-size: 14px; margin-left: -5px; margin-top: 0px;}
 
 }
-@media (max-width: 440px) {
+/* @media (max-width: 440px) {
     footer {
         height: 20vh;
     }
@@ -1437,4 +1446,4 @@ footer {
         margin-top: 70px;
     }
 
-}
+} */
