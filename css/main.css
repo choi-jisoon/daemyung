@@ -1428,22 +1428,9 @@ footer {
     .family_wrap button {font-size: 14px; margin-left: -5px; margin-top: 0px;}
 
 }
-/* @media (max-width: 440px) {
-    footer {
-        height: 20vh;
+@media (max-width: 440px) {
+    .family_wrap button {margin-left: -10px; margin-top: 10px;}
+    .family_list {
+        font-size: 12px;
     }
-    .family_wrap button {margin-top: 10px;}
-    .f_left, .f_right {
-        font-size: 7px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        gap: 30px ;
-    }
-    .f_right_bottom img {
-        width: 150px;
-        height: 50px;
-        margin-top: 70px;
-    }
-
-} */
+}
