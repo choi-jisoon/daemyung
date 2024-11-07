@@ -336,8 +336,8 @@ body.modal-open {
         display: block;
         position: fixed;
         top: 23px;
-        right: 30px;
-        width: 45px;
+        right: 15px;
+        width: 43px;
         height: 50px;
         background: none;
         color: white;
@@ -346,6 +346,9 @@ body.modal-open {
         font-size: 32px;
         z-index: 1000;
         cursor: pointer;
+        justify-content: start;
+        text-align: left;
+        align-items: start;
     }
 
     .allmenu_popup {
@@ -432,7 +435,7 @@ body.modal-open {
     }
     .btn_allmenu_open {
         top: 20px;
-        right: 30px;
+        /* right: 15px; */
     }
 }
 @media (max-width: 670px) {
@@ -479,16 +482,16 @@ body.modal-open {
         background-size: contain; /* 이미지 잘리지 않도록 */
         transform: translateX(-50%);
     }
-    .main_visual strong {font-size: 40px; top: 300px !important; margin-bottom: 0;}
+    .main_visual strong {font-size: 40px; top: 250px !important; margin-bottom: 0;}
     .main_visual .firstp {
         font-size: 20px;
         line-height: 60px;
-        top: 320px !important;
+        top: 270px !important;
     }
     .main_visual .seconndp {
         font-size: 10px;
         color: #FFF;
-        top: 330px !important;
+        top: 280px !important;
     }
     .main_visual strong,
     .main_visual .firstp,
